@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Alumnos</title>
   </head>
-  <body></body>
+  <body>
+    <h1>
+      <span class="blue">Alumnos</span>
+      <span class="yellow">Axios</span>
+    </h1>
+    <button class="button" id="btnMostrar">Mostrar</button>
+    <button class="button" id="btnLimpiar">Limpiar</button>
+    <span id="proGeneral">Promedio General: </span>
+    <table class="container">
+      <thead class="container__head">
+        <tr>
+          <th><h2>ID</h2></th>
+          <th><h2>Matricula</h2></th>
+          <th><h2>Nombre</h2></th>
+          <th><h2>Matematicas</h2></th>
+          <th><h2>Quimica</h2></th>
+          <th><h2>Fisica</h2></th>
+          <th><h2>Geografia</h2></th>
+          <th><h2>Promedio</h2></th>
+        </tr>
+      </thead>
+      <tbody id="container__data">
+        <template id="templateData">
+          <tr>
+            <td id="id">Lorem, ipsum dolor.</td>
+            <td id="matricula">Lorem, ipsum dolor.</td>
+            <td id="nombre">Lorem, ipsum dolor.</td>
+            <td id="matematicas">Lorem, ipsum dolor.</td>
+            <td id="quimica">Lorem, ipsum dolor.</td>
+            <td id="fisica">Lorem, ipsum dolor.</td>
+            <td id="geografia">Lorem, ipsum dolor.</td>
+            <td id="promedio">Lorem, ipsum dolor.</td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  </body>
   <script src="/js/app.js" defer></script>
 </html>
