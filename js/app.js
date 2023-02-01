@@ -40,4 +40,9 @@ function mostrar(data) {
   proGeneral.innerHTML += (pro / alumnos).toFixed(2);
 }
 
-cargarAjax();
+btnMostrar.addEventListener("click", cargarAjax);
+
+btnLimpiar.addEventListener("click", () => {
+  containerData.innerHTML = "";
+  proGeneral.innerHTML = "Promedio General :";
+});
