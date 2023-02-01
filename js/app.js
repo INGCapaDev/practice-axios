@@ -37,7 +37,7 @@ function mostrar(data) {
   containerData.innerHTML = "";
   containerData.appendChild(fragment);
   const alumnos = Object.keys(data).length;
-  proGeneral.innerHTML += (pro / alumnos).toFixed(2);
+  proGeneral.innerHTML = "Promedio General : " + (pro / alumnos).toFixed(2);
 }
 
 btnMostrar.addEventListener("click", cargarAjax);
